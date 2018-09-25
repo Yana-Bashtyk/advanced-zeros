@@ -17,8 +17,8 @@ module.exports = function getZerosCount(number, base) {
       let numberTemp = number;
       //count the number of factors in factorial
       while (numberTemp / i > 0){
-        counter += Math.floor(numberTemp/i);
-        numberTemp = Math.floor(numberTemp/i);
+        counter += Math.floor(numberTemp / i);
+        numberTemp = Math.floor(numberTemp / i);
       }
       
       if (zerosCount > Math.floor(counter/power)) zerosCount = Math.floor(counter/power);
