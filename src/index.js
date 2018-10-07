@@ -1,13 +1,12 @@
 module.exports = function getZerosCount(number, base) {
   
-  let power, 
-      zerosCount = number;
+  let zerosCount = number;
 
   //divide base-number in prime(simple) factors
   for (let i=2; i<=base; i++) {
     
     if (base % i == 0){
-      power = 0;
+      let power = 0;
     //find power for each factor (i)  
       while (base % i == 0){
         power++;
